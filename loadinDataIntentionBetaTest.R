@@ -4,7 +4,7 @@ library(reshape2)
 setwd('C:/Users/rijk/Dropbox/Studie/2014-2015/Masterscriptie/Data Analysis/')
 source('util.R')
 
-data <- read.csv('C:/Users/rijk/git/meatSimLuna/meatSim/output/relevant/MNI_and_VNI.2015.jun.16.11_59_46_updatedIntentionfunction.txt')
+datas <- read.csv('C:/Users/rijk/git/meatSimLuna/meatSim/output/relevant/MNI_and_VNI.2015.jun.16.11_59_46_updatedIntentionfunction.txt')
 params <-  read.csv('C:/Users/rijk/git/meatSimLuna/meatSim/output/relevant/MNI_and_VNI.2015.jun.16.11_59_46.batch_param_map.txt')
 
 params <- data.frame(run = params$run, beta = params$selfEbeta)
